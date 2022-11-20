@@ -14,7 +14,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React.Js](https://pt-br.reactjs.org)
 - [Next.Js](https://nextjs.org)
 - [Supabase](https://github.com/supabase/supabase)
-- [Styled Components](https://styled-components.com/)
+- [Stitches](https://stitches.dev/)
 
 ## Comando SQL
 
@@ -37,13 +37,13 @@ Agora, vá para as configurações do projeto **(o ícone de engrenagem)**, abra
 ### 3. Clone esse repositório
 
 ```bash
-git clone https://github.com/ShadowsS01/Alura-Imersao.git
+git clone https://github.com/ShadowsS01/aluratube.git
 ```
 
 ### 4. Acesse a pasta do projeto
 
 ```bash
-cd Alura-Imersao/aluratube
+cd aluratube
 ```
 
 ### 5. Configurar variáveis de ambiente
