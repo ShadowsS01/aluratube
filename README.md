@@ -1,34 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Aluratube
 
-## Getting Started
+[![license mit](https://img.shields.io/badge/licence-MIT-blue)](./LICENSE "Ver licença MIT")
 
-First, run the development server:
+[<img src="./public/Logo.svg" alt="Logo" width="80" />](https://aluratube0.vercel.app/ "Demonstração do projeto")
+
+Projeto [Next.Js](https://nextjs.org/ "Site do Next.Js") tendo como ideia a criação das playlists do YouTube.
+
+## Tecnologias utilizadas
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Node.js](https://nodejs.dev)
+- [React.Js](https://pt-br.reactjs.org)
+- [Next.Js](https://nextjs.org)
+- [Supabase](https://github.com/supabase/supabase)
+- [Styled Components](https://styled-components.com/)
+
+## Comando SQL
+
+> Comando SQL necessário para deixar o projeto Supabase utilizável por esse projeto pode ser encontrado no [`schema.sql`](./schema.sql).
+
+## Como executar o projeto
+
+Para executar o projeto você precisa ter o [Node.js](https://nodejs.dev) e o [Git](https://git-scm.com) instalados na sua maquina. Você também precisará de um editor de código, eu utilizei o [VSCode](https://code.visualstudio.com).
+
+### 1. Configurando o [Supabase](https://app.supabase.io/)
+
+- Faça login e crie um projeto no [Supabase](https://app.supabase.io/). Aguarde o início do banco de dados.
+
+- Depois que seu banco de dados for iniciado, execute o [Comando SQL](#comando-sql). Dentro do seu projeto, entre na guia do `SQL Editor`, Clique em "New Query", cole o comando e clique em  "RUN".
+
+### 2. Pegando a URL e a Key
+
+Agora, vá para as configurações do projeto **(o ícone de engrenagem)**, abra a guia API e encontre a URL da API e a Key **(Anon Public)**, você precisará delas na [etapa 5](#5-configurar-vari%C3%A1veis-de-ambiente).
+
+### 3. Clone esse repositório
+
+```bash
+git clone https://github.com/ShadowsS01/Alura-Imersao.git
+```
+
+### 4. Acesse a pasta do projeto
+
+```bash
+cd Alura-Imersao/aluratube
+```
+
+### 5. Configurar variáveis de ambiente
+
+Copie o arquivo `.env.example` neste diretório para `.env.local` *(que será ignorado pelo Git)*:
+
+```bash
+cp .env.example .env.local
+```
+
+Em seguida, defina cada variável em `.env.local` com a URL e a key obtida na [Etapa 2](#2-pegando-a-url-e-a-key):
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=Url Obtida
+NEXT_PUBLIC_SUPABASE_ANON_KEY=A key anon
+```
+
+### 6. Instale as dependências
+
+```bash
+npm install
+```
+
+### 7. Execute a aplicação em modo de desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<https://aluratube0.vercel.app/>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Licença
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Este projeto esta sob a licença [MIT](./LICENSE "Ver licença MIT").
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+🔝[Voltar para o topo](#aluratube "Voltar para o topo")
